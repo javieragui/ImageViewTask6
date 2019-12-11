@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/donut"
+                android:layout_width="213dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/donut_circle"
+                android:onClick="showDonutOrder"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donuts are glaced and sprinkled with candy."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/sandw"
+                android:padding="10dp"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icecream_circle"
+                android:onClick="showSandwOrder"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ice Cream sandwiches have chocolate wafers andvanilla filling." />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/helado"
+                android:layout_width="213dp"
+                android:padding="10dp"
+
+                android:layout_height="150dp"
+                android:src="@drawable/froyo_circle"
+                android:onClick="showHeladoOrder"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Froyo is premium self-serve frozen yogurt."/>
+        </LinearLayout>
+</LinearLayout>
